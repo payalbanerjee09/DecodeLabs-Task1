@@ -1,0 +1,247 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F7EBE8; /* Nude Baby Pink Background */
+    color: #4A3E3D;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+    color: #352F2F;
+}
+
+/* Navbar */
+header {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(74, 62, 61, 0.05);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #8E7C93; /* Soft Purple/Mauve Touch for Logo */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #6B5B5A;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #8E7C93;
+}
+
+.social-nav {
+    color: #8E7C93 !important;
+    font-weight: 600 !important;
+}
+
+/* Sections Layout */
+section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #5C4B51;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 65vh;
+}
+
+.hero-text h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 22px;
+    color: #6B5B5A;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #8E7C93; /* Purple Accent for name highlight */
+}
+
+/* Skills Grid (Boxes with Purple Shade) */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill-card {
+    background-color: #E8DFF5; /* Light Soft Purple Shade */
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #4A3B52;
+    box-shadow: 0 3px 8px rgba(142, 124, 147, 0.1);
+    border: 1px solid #D6C7E8;
+    transition: all 0.3s ease; /* Dynamic Type Transition */
+}
+
+/* Dynamic Hover Effect */
+.skill-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    background-color: #D6C7E8; /* Thoda dark purple on hover */
+    box-shadow: 0 6px 15px rgba(142, 124, 147, 0.2);
+}
+
+/* Projects Grid (Boxes with Purple Shade) */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #E8DFF5; /* Light Soft Purple Shade */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(142, 124, 147, 0.1);
+    border-top: 5px solid #8E7C93; /* Bold Purple Top Border */
+    border-left: 1px solid #D6C7E8;
+    border-right: 1px solid #D6C7E8;
+    border-bottom: 1px solid #D6C7E8;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(142, 124, 147, 0.2);
+}
+
+/* Contact Form Input Boxes with Purple Tint */
+.contact-form {
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #F4EEFF; /* Very light purple tint for input fields */
+    border: 1px solid #D6C7E8;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #4A3B52;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    background-color: #ffffff;
+    border-color: #8E7C93;
+    box-shadow: 0 0 8px rgba(142, 124, 147, 0.25);
+}
+
+.contact-form button {
+    background-color: #8E7C93; /* Main Purple Theme Button */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+    background-color: #736278;
+    transform: translateY(-2px);
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #ffffff;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #6B5B5A;
+    border-top: 1px solid #EAF0F1;
+}
+
+.footer-socials {
+    margin-bottom: 10px;
+}
+
+.footer-socials a {
+    text-decoration: none;
+    color: #4A3E3D;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+    color: #8E7C93;
+}
+
+/* Responsive Logic */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .hero-text h1 {
+        font-size: 34px;
+    }
+    section {
+        padding: 50px 15px;
+    }
+}
