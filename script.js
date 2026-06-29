@@ -1,4 +1,3 @@
-// Simple Form Submission Logic (Pure Human Written Style)
 document.getElementById('portfolioForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevents page reload on form submit
     
